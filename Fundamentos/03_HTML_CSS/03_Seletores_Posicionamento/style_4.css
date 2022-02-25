@@ -1,0 +1,52 @@
+div:hover {
+    border: 3px solid black;
+    padding: 5px;
+}
+
+/*  CONTA DA ORDEM DE ELEMENTOS NO BODY, '3' TERCEIRO ELEMENTO DENTRO DO BODY
+ */
+
+div:nth-child(3){
+    background-color: blue;
+}
+
+div:nth-child(4) {
+    background-color: orange;
+}
+
+div:nth-child(5) {
+    background-color: purple;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+div:nth-child(6) {
+    background-color: darkblue;
+}
+
+div:nth-child(7) {
+    background-color: cyan;
+}
+
+div:nth-child(3) h3:nth-child(1) {
+    color: orange;
+    font-style: italic;
+}
+
+div:nth-child(4) h3:nth-child(1) {
+    color: purple;
+}
+
+div:nth-child(5) h3:nth-child(1) {
+    color: darkblue;
+    font-style: italic;
+}
+
+div:nth-child(6) h3:nth-child(1) {
+    color: cyan;
+}
+
+div:nth-child(7) h3:nth-child(1) {
+    color: blue;
+    font-style: italic;
+}

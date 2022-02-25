@@ -1,0 +1,15 @@
+.center {
+    text-align: center;
+}
+
+#list-one li:hover {
+    background-color: lightgrey;
+}
+
+#list-one li:active {
+    color: red;
+}
+
+.list {
+    list-style: none;
+}

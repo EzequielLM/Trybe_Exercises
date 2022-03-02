@@ -1,0 +1,75 @@
+/* Parte 1 */
+
+ol li {
+    background-color: yellow;
+}
+
+ol li:nth-child(odd) {
+    text-transform: uppercase;
+}
+
+ol li:nth-child(even) {
+    color: green;
+}
+
+/* Parte 2 */
+
+.header {
+    color:red;
+}
+
+.header em {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+/* Parte 3 */
+
+li {
+    font-size: 20px;
+}
+
+li em {
+    font-weight: bold;
+}
+
+/* Parte 4 */
+
+#linguagens li:nth-child(1), #linguagens li:nth-child(2), #linguagens li:nth-child(3) {
+    color: blue;
+}
+
+.java {
+    background-color: pink;
+}
+
+/* Parte 5 */
+
+#sites li a{
+    text-decoration: none;
+    color: grey;
+}
+
+#sites a:hover {
+    font-weight: bold;
+}
+
+#sites li:nth-child(1) a:hover{
+    color: orange;
+}
+
+#sites li:nth-child(2) a:hover {
+    color: green;
+}
+
+#sites li:nth-child(3) a:hover {
+    color: black;
+}
+
+#sites li:nth-child(4) a:hover {
+    color: yellow;
+}
+
+#sites li:nth-child(5) a:hover {
+    color: lightgreen;
+}

@@ -6,47 +6,47 @@ div:hover {
 /*  CONTA DA ORDEM DE ELEMENTOS NO BODY, '3' TERCEIRO ELEMENTO DENTRO DO BODY
  */
 
-div:nth-child(3){
+div:nth-of-type(1){
     background-color: blue;
 }
 
-div:nth-child(4) {
+div:nth-of-type(2) {
     background-color: orange;
 }
 
-div:nth-child(5) {
+div:nth-of-type(3) {
     background-color: purple;
     padding-bottom: 10px;
     padding-top: 10px;
 }
 
-div:nth-child(6) {
+div:nth-of-type(4) {
     background-color: darkblue;
 }
 
-div:nth-child(7) {
+div:nth-of-type(5) {
     background-color: cyan;
 }
 
-div:nth-child(3) h3:nth-child(1) {
+div:nth-of-type(1) > h3 {
     color: orange;
     font-style: italic;
 }
 
-div:nth-child(4) h3:nth-child(1) {
+div:nth-of-type(2) > h3 {
     color: purple;
 }
 
-div:nth-child(5) h3:nth-child(1) {
+div:nth-of-type(3) > h3 {
     color: darkblue;
     font-style: italic;
 }
 
-div:nth-child(6) h3:nth-child(1) {
+div:nth-of-type(4) > h3 {
     color: cyan;
 }
 
-div:nth-child(7) h3:nth-child(1) {
+div:nth-of-type(5) > h3 {
     color: blue;
     font-style: italic;
 }

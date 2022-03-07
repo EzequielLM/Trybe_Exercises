@@ -27,7 +27,7 @@ else {
 
 //Parte 3
 
-const num1 = 10;
+/* const num1 = 10;
 const num2 = 20;
 const num3 = 30;
 
@@ -39,4 +39,19 @@ else if (num2 > num1 && num2 > num3) {
 }
 else if (num3 > num1 && num3 > num2) {
     console.log(num3);
+}
+ */
+
+//Parte 4
+
+const valor = 10;
+
+if (valor > 0) {
+    console.log("Positive");
+}
+else if (valor == 0){
+    console.log("Zero");
+}
+else {
+    console.log("Negative");
 }

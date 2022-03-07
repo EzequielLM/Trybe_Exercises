@@ -44,7 +44,7 @@ else if (num3 > num1 && num3 > num2) {
 
 //Parte 4
 
-const valor = 10;
+/* const valor = 10;
 
 if (valor > 0) {
     console.log("Positive");
@@ -54,4 +54,35 @@ else if (valor == 0){
 }
 else {
     console.log("Negative");
+} */
+
+//Parte 5
+
+const ang1 = 60;
+const ang2 = 60;
+const ang3 = 60;
+
+let soma = ang1 + ang2 + ang3;
+
+if (ang1 > 0){
+    if (ang2 > 0){
+        if (ang3 > 0){
+            if (soma == 180){
+                console.log(true);
+            }
+            else{
+                console.log(false);
+            }
+        }
+        else {
+            console.log("Angulo 3 valor negativo");
+        }
+    }
+    else{
+        console.log("Angulo 2 valor negativo");
+    }
+
+}
+else{
+    console.log("Angulo 1 valor negativo");
 }

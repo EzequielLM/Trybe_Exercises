@@ -21,3 +21,11 @@ let media = sumNumbers / numbers.length;
 
 console.log(media);
 
+//Parte 4
+
+if(media > 20) {
+    console.log('Valor maior que 20');
+}
+else {
+    console.log('Valor menor que 20');
+}

@@ -31,7 +31,8 @@ else {
 } */
 
 //Parte 5
-let maior = 0;
+
+/* let maior = 0;
 
 for(let i = 0; i < numbers.length; i += 1) {
     if(numbers[i] > maior){
@@ -40,3 +41,21 @@ for(let i = 0; i < numbers.length; i += 1) {
 }
 
 console.log(maior);
+ */
+
+//Parte 6
+
+let odd = 0;
+
+for (let i = 0; i < numbers.length; i += 1) {
+    if (numbers[i] % 2 !== 0) {
+        odd += 1;
+    }
+}
+
+if (odd === 0){
+    console.log('nenhum valor ímpar encontrado');
+}
+else{
+    console.log(odd);
+}

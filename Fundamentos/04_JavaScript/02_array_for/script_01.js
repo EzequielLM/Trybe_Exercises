@@ -1,5 +1,5 @@
 /* let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27]; */
-/* let sumNumbers = 0; */
+
 //Parte 1
 
 /* for (let i = 0; i < numbers.length; i += 1) {
@@ -7,6 +7,8 @@
 } */
 
 //Parte 2
+
+/* let sumNumbers = 0; */
 
 /* for (let i = 0; i < numbers.length; i += 1) {
     sumNumbers += numbers[i];
@@ -75,16 +77,16 @@ console.log(menor);
 
 //Parte 8
 
-let list = [];
+/* let list = [];
 
 for(let i = 0; i < 25; i += 1) {
     list[i] = i + 1;
-}
+} */
 
 /* console.log(list); */
 
 //Parte 9
 
-for (let i = 0; i < list.length; i += 1) {
+/* for (let i = 0; i < list.length; i += 1) {
     console.log(list[i] / 2);
-}
+} */

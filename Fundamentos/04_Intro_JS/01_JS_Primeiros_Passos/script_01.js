@@ -58,7 +58,7 @@ else {
 
 //Parte 5
 
-const ang1 = 60;
+/* const ang1 = 60;
 const ang2 = 60;
 const ang3 = 60;
 
@@ -85,4 +85,30 @@ if (ang1 > 0){
 }
 else{
     console.log("Angulo 1 valor negativo");
+} */
+
+//Parte 6
+
+let peca = 'Tower';
+
+if (peca === 'King'){
+    console.log('All directions, but just one square');
+}
+else if (peca === 'Queen'){
+    console.log('Vertical, horizontal and diagonals');
+}
+else if (peca === 'Bishop') {
+    console.log('Diagonals');
+}
+else if (peca === 'Horse') {
+    console.log('In L');
+}
+else if (peca === 'Tower') {
+    console.log('Vertical and Horizontal');
+}
+else if (peca === 'Pawn') {
+    console.log('One square foward and two squares in the first move');
+}
+else {
+    console.log('Error, chess piece not found!');
 }

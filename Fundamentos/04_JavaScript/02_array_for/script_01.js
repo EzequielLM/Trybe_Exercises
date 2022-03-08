@@ -12,4 +12,12 @@ for (let i = 0; i < numbers.length; i += 1) {
     sumNumbers += numbers[i];
 }
 
-console.log(sumNumbers);
+/* console.log(sumNumbers); */
+
+
+//Parte 3
+
+let media = sumNumbers / numbers.length;
+
+console.log(media);
+

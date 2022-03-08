@@ -115,7 +115,7 @@ else {
 
 //Parte 7
 
-const nota = 101;
+/* const nota = 101;
 
 if (nota >= 90 && nota < 100) {
     console.log('Nota A');
@@ -138,3 +138,6 @@ else if (nota < 50){
 else if (nota > 100 || nota < 0){
     console.log('Error');
 }
+ */
+
+//Parte 8

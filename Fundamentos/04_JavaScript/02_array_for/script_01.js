@@ -45,7 +45,7 @@ console.log(maior);
 
 //Parte 6
 
-let odd = 0;
+/* let odd = 0;
 
 for (let i = 0; i < numbers.length; i += 1) {
     if (numbers[i] % 2 !== 0) {
@@ -58,4 +58,16 @@ if (odd === 0){
 }
 else{
     console.log(odd);
+} */
+
+//Parte 7
+
+let menor = numbers[0];
+
+for(let i = 0; i < numbers.length; i += 1) {
+    if(numbers[i] < menor){
+        menor = numbers[i];
+    }
 }
+
+console.log(menor);

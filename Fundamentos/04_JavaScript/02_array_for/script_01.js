@@ -1,4 +1,4 @@
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+/* let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27]; */
 /* let sumNumbers = 0; */
 //Parte 1
 
@@ -62,7 +62,7 @@ else{
 
 //Parte 7
 
-let menor = numbers[0];
+/* let menor = numbers[0];
 
 for(let i = 0; i < numbers.length; i += 1) {
     if(numbers[i] < menor){
@@ -71,3 +71,14 @@ for(let i = 0; i < numbers.length; i += 1) {
 }
 
 console.log(menor);
+ */
+
+//Parte 8
+
+let list = [];
+
+for(let i = 0; i < 25; i += 1) {
+    list[i] = i + 1;
+}
+
+console.log(list);

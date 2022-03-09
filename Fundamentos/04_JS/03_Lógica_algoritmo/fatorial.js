@@ -11,3 +11,12 @@ for(let i = 10; i > 0; i -= 1){
 console.log(fatorial);
 
 // <=======Parte 2=======>
+
+let word = 'tryber';
+let drow = '';
+
+for(i = word.length - 1; i >= 0; i -= 1){
+    drow += word[i];
+}
+console.log(word);
+console.log(drow);

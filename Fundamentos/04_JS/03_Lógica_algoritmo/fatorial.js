@@ -1,7 +1,7 @@
-// <=======Parte 1=======>
+//? <=======Parte 1=======>
 
 //O fatorial é representado pelo sinal !
-//! = 4 x 3 x 2 x 1 = 24
+// = 4 x 3 x 2 x 1 = 24
 
 let fatorial = 1;
 
@@ -10,9 +10,9 @@ for(let i = 10; i > 0; i -= 1){
 }
 console.log(fatorial);
 
-//OutPut -> 3628800
+//!OutPut -> 3628800
 
-// <=======Parte 2=======>
+//? <=======Parte 2=======>
 
 let word = 'tryber';
 let drow = '';
@@ -23,9 +23,9 @@ for(let i = word.length - 1; i >= 0; i -= 1){
 console.log(word);
 console.log(drow);
 
-//OutPut -> tryber | rebyrt
+//!OutPut -> tryber | rebyrt
 
-// <=======Parte 3=======>
+//? <=======Parte 3=======>
 
 let array = ['java', 'javascript', 'python', 'html', 'css'];
 let maior = array[0];
@@ -43,9 +43,9 @@ for(let i = 0; i < array.length; i += 1){
 console.log(maior);
 console.log(menor);
 
-//OutPut -> javascript | css
+//!OutPut -> javascript | css
 
-// <=======Parte 4=======>
+//? <=======Parte 4=======>
 
 let primo = 0;
 
@@ -63,4 +63,4 @@ for(let i1 = 1; i1 < 50; i1 += 1){
 
 console.log(primo);
 
-//OutPut -> 47
+//!OutPut -> 47

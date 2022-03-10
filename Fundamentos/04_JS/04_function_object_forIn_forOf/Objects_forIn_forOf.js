@@ -12,12 +12,14 @@ let info = {
 
   info.recorrente = 'Sim';
 
-  //* Faça um for/in que mostre todas as chaves do objeto. Valor esperado no console:
+  //* Faça um for/in que mostre todas as chaves do objeto.
 
   for(let valor in info){
       console.log(valor);
   }
 
-  //* Faça um novo for/in , mas agora mostre todos os valores das chaves do objeto. Valor esperado no console:
+  //* Faça um novo for/in , mas agora mostre todos os valores das chaves do objeto.
 
-  
+  for(let valor in info){
+    console.log(info[valor]);
+}

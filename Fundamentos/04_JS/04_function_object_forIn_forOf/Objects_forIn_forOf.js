@@ -54,3 +54,21 @@ let info = {
   let livroFav = leitor.livrosFavoritos[0]; //! Salvar a posição para poder chamar a chave desejada
 
   console.log('O livro favorito de ' + leitor.nome + ' ' + leitor.sobrenome + ' se chama \'' + livroFav.titulo + '\'.');
+
+  //*Adicione um novo livro favorito na chave livrosFavoritos , que é um array . Atribua a esta chave um objeto contendo as seguintes informações:
+
+  /* {
+    titulo: 'Harry Potter e o Prisioneiro de Azkaban',
+    autor: 'JK Rowling',
+    editora: 'Rocco',
+  } */
+
+  leitor.livrosFavoritos[1] = 
+      {
+    titulo: 'Harry Potter e o Prisioneiro de Azkaban',
+    autor: 'JK Rowling',
+    editora: 'Rocco',
+  }
+
+
+console.log(leitor);

@@ -74,3 +74,19 @@ function maisCaracteres(array){
 let arrayNomes = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
 
 console.log(maisCaracteres(arrayNomes));
+
+
+//! Criar uma função que reeceba um array de inteiros
+//! e retorne o inteiro que mais se repete
+
+function maisVezes(array){
+    let maisVezes = 0;
+
+    
+
+    return maisVezes;
+}
+
+let arrayMaisVezes = [2, 3, 2, 5, 8, 2, 3];
+
+console.log(maisVezes(arrayMaisVezes));

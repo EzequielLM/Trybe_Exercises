@@ -63,12 +63,12 @@ let info = {
     editora: 'Rocco',
   } */
 
-  leitor.livrosFavoritos[1] = 
+  leitor.livrosFavoritos.push(
       {
     titulo: 'Harry Potter e o Prisioneiro de Azkaban',
     autor: 'JK Rowling',
     editora: 'Rocco',
-  }
+  });
 
   console.log(leitor);
 

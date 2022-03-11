@@ -14,3 +14,23 @@ function verificaPalindromo(word){
 
 console.log(verificaPalindromo('arara'));
 console.log(verificaPalindromo('desenvolvimento'));
+
+//! Criar uma função que reeceba um array de inteiros
+//! e retorne o índice do menor valor
+
+function indiceMaiorValor(array){
+    
+    let count = 0;
+
+    for(let i = 0; i < array.length; i += 1){
+        if(array[i] > array[count]){
+            count = i;
+        }
+    }
+
+    return count;
+}
+
+let arrayTest = [2, 3, 6, 7, 10, 1];
+
+console.log(indiceMaiorValor(arrayTest));

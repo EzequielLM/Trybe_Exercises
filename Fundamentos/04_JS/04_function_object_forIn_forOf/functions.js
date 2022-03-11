@@ -10,7 +10,7 @@ function verificaPalindromo(word){
     else{
         return false;
     }
-};
+}
 
 console.log(verificaPalindromo('arara'));
 console.log(verificaPalindromo('desenvolvimento'));
@@ -54,3 +54,23 @@ function indiceMaiorValor(array){
 let arrayMenor = [2, 4, 6, 7, 10, 0, -3];
 
 console.log(indiceMaiorValor(arrayMenor));
+
+//! Criar uma função que reeceba um array de nomes
+//! e retorne o que tiver mais caracteres 
+
+function maisCaracteres(array){
+
+    let maiorNome = '';
+
+    for(let i = 0; i < array.length; i += 1){
+        if(array[i].length > maiorNome.length){
+            maiorNome = array[i];
+        }
+    }
+
+    return maiorNome;
+}
+
+let arrayNomes = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+
+console.log(maisCaracteres(arrayNomes));

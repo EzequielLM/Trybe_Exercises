@@ -70,11 +70,21 @@
 
         /* Parte 2 */
 
-        let main = document.createElement('main');
+        let main = document.createElement('main');/* salva a criação do elemento */
 
-        main.className = "main-content";
+        main.className = "main-content"; /* Determina o nome da classe do elemento */
 
-        corpo.appendChild(main);
+        corpo.appendChild(main);/* cria o elemento no html */
+
+        /* Parte 3 */
+
+        let mainSection = document.getElementsByClassName('main-content')[0]; /* Salva a main criada anteriormente em uma variavel usando o [0] para determinar a primeira tag com a classe*/
+
+        let secao = document.createElement('section');
+
+        secao.className = "center-content";
+
+        mainSection.appendChild(secao);
 
     </script>
   </body>

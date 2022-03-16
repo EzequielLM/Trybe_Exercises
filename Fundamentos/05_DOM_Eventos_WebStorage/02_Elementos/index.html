@@ -123,6 +123,29 @@
 
         leftContent.appendChild(img); 
 
+        /* Passo 8 */
+
+        let rightContent = document.getElementsByClassName('right-content')[0];
+
+        let list = document.createElement('ul');
+        list.className = 'list';
+        
+        rightContent.appendChild(list);
+
+        let listItens = document.getElementsByClassName('list')[0];
+
+        let numbers = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+
+        for (let i = 0; i < numbers.length; i += 1) {
+            let itemList = document.createElement('li');
+
+            itemList.innerText = numbers[i];
+
+            listItens.appendChild(itemList);
+        }
+
+        
+
     </script>
   </body>
 </html>

@@ -58,13 +58,15 @@
   <body id="corpo">
     <script>
 
-        /* Parte 1 */
+        /* Parte 1 e 10*/
 
         let corpo = document.getElementById('corpo'); /* Salva o local onde vai criar um novo elemento */
 
         let text = document.createElement('h1');/* Salva qual elemento vai ser criado */
 
         text.innerText = 'Exercício 5.2 - JavaScript DOM';/* determina o que vai de texto dentro do elemento */
+
+        text.className = 'title';
 
         corpo.appendChild(text);/* Adiciona o elemento */
 
@@ -123,7 +125,7 @@
 
         leftContent.appendChild(img); 
 
-        /* Passo 8 */
+        /* Passo 8 e 13*/
 
         let rightContent = document.getElementsByClassName('right-content')[0];
 
@@ -131,6 +133,8 @@
         list.className = 'list';
         
         rightContent.appendChild(list);
+
+        rightContent.style.marginRight = 'auto';
 
         let listItens = document.getElementsByClassName('list')[0];
 
@@ -144,18 +148,26 @@
             listItens.appendChild(itemList);
         }
 
-        /* Passo 9 */
-
-        
+        /* Passo 9 e 11*/
 
         for (let i = 1; i < 4; i += 1) {
           let title = document.createElement('h3');
-          title.className = 'title';
           title.innerText = 'Titulo ' + i;
+          title.className = 'description';
           mainSection.appendChild(title);
         }
         
+        /* Parte 12 */
 
+        mainSection.removeChild(secaoLeft);
+
+        /* Parte 14 */
+
+        mainSection.style.background = 'green';
+
+        /* Parte 15 */
+
+        
     </script>
   </body>
 </html>

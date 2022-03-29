@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Forms</title>
+</head>
+<body>
+
+    <header id="title">
+        <h1>TrybeTrip Form</h1>
+    </header>
+
+    <main id="form-container">
+        <form action="" method="GET" id="form">
+            <label for="name">Nome: </label>
+            <input required type="text" id="name" min="10" max="40">
+</br>
+</br>
+            <label for="email">Email: </label>
+            <input required type="email" id="email" min="10" max="50">
+</br>
+</br>
+            <fieldset id="field">
+                <legend>Destino da viajem</legend>
+            <label for="op1">
+            <input type="radio" name="opcao" id="op1" value="sp">São Paulo</label>
+            <label for="op2">
+            <input type="radio" name="opcao" id="op2" value="pr">Paraná</label>
+            <label for="op3">
+            <input type="radio" name="opcao" id="op3" value="ba">Bahia</label>
+            <label for="op4">
+            <input type="radio" name="opcao" id="op4" value="sc">Santa Catarina</label>
+        </fieldset>
+</br>
+</br>
+            <p>Diga por que você deve ganhar: </p>
+            <textarea required id="text-area" cols="40" rows="6" max="500" placeholder="Digite aqui..."></textarea>
+</br>
+</br>
+            <label required for="data">Data: <input type="date" id="data"></label>
+</br>
+</br>
+            <input type="checkbox" class="check" id="check1"><label for="check1">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+</br>
+</br>
+            <input required type="checkbox" class="check" id="check2"><label for="check2">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+</br>
+</br>
+            <button id="btn-enviar" type="submit">Enviar</button>
+            <button id="btn-apagar">Apagar</button>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

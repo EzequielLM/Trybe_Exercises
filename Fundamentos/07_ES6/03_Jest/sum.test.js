@@ -1,4 +1,4 @@
-const { sum, myRemove, myFizzBuzz} = require('./sum');
+const { sum, myRemove, myFizzBuzz, encode, decode} = require('./sum');
 
 describe('Função sum', () => {
 
@@ -68,4 +68,50 @@ test('Retorna 11 para o valor 11', () => {
 test('Retorna false para o valor Olá', () => {
     expect(myFizzBuzz('Olá')).toBe(false);
 });
+});
+
+describe('Função encode', () => {
+
+//Teste se encode e decode são funções;
+test('Encode é uma função', () => {
+    expect(typeof encode).toBe('function');
+});
+
+//Para a função encode teste se as vogais a, e, i, o, u são convertidas em 1, 2, 3, 4 e 5, respectivamente;
+test('As vogais são trocadas por números', () => {
+    expect(encode('aeiou')).toEqual('12345');
+});
+
+//Teste se as demais letras/números não são convertidos para cada caso;
+test('Não muda letras que não são vogais', () => {
+    expect(encode('bcdfg')).toEqual('bcdfg');
+});
+
+//Teste se a string que é retornada pelas funções têm o mesmo número de caracteres que a string passada como parâmetro.
+test('O retorno não muda o tamanho da string', () => {
+    expect(encode('aeiou')).toHaveLength(5);
+})
+});
+
+describe('Função decode', () => {
+
+//Teste se encode e decode são funções;
+test('Decode é uma função', () => {
+    expect(typeof decode).toBe('function');
+});
+
+//Para a função decode teste se os números 1, 2, 3, 4 e 5 são convertidos nas vogais a, e, i, o, u , respectivamente;
+test('Os números são trocados por vogais', () => {
+    expect(decode('12345')).toEqual('aeiou');
+});
+
+//Teste se as demais letras/números não são convertidos para cada caso;
+test('Não muda números que acima de 5', () => {
+    expect(encode('67890')).toEqual('67890');
+});
+
+//Teste se a string que é retornada pelas funções têm o mesmo número de caracteres que a string passada como parâmetro.
+test('O retorno não muda o tamanho da string', () => {
+    expect(encode('12345')).toHaveLength(5);
+})
 });

@@ -1,6 +1,6 @@
-describe('Função sum', () => {
+const { sum, myRemove} = require('./sum');
 
-const sum = require('./sum');
+describe('Função sum', () => {
 
 //Teste se o retorno de sum(4, 5) é 9
 test('Soma 4 e 5 = 9', () => {
@@ -23,3 +23,10 @@ test('A string do erro deve ser parameters must be numbers', () => {
 })
 });
 
+describe('Função myRemove', () => {
+
+//Verifique se a chamada myRemove([1, 2, 3, 4], 3) retorna o array esperado
+test('Retorna o array[1, 2, 4]', () => {
+    expect(myRemove([1, 2, 3, 4], 3)).toEqual([1, 2, 4]);
+})
+})

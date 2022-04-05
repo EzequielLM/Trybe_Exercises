@@ -1,4 +1,4 @@
-const { sum, myRemove} = require('./sum');
+const { sum, myRemove, myFizzBuzz} = require('./sum');
 
 describe('Função sum', () => {
 
@@ -40,4 +40,32 @@ test('Retorna o array[1, 2, 3, 4]', () => {
     expect(myRemove([1, 2, 3, 4], 5)).toEqual([1, 2, 3, 4]);
 })
 
-})
+});
+
+describe('Função myFizzBuzz', () => {
+
+//Faça uma chamada com um número divisível por 3 e 5 e verifique se o retorno é o esperado
+test('Retorna fizzbuzz para o valor 15', () => {
+    expect(myFizzBuzz(15)).toBe('fizzbuzz');
+});
+
+//Faça uma chamada com um número divisível por 3 e verifique se o retorno é o esperado
+test('Retorna fizz para o valor 9', () => {
+    expect(myFizzBuzz(9)).toBe('fizz');
+});
+
+//Faça uma chamada com um número divisível por 5 e verifique se o retorno é o esperado
+test('Retorna buzz para o valor 10', () => {
+    expect(myFizzBuzz(10)).toBe('buzz');
+});
+
+//Faça uma chamada com um número que não é divisível por 3 ou 5 e verifique se o retorno é o esperado
+test('Retorna 11 para o valor 11', () => {
+    expect(myFizzBuzz(11)).toBe(11);
+});
+
+//Faça uma chamada com um parâmetro que não é um número e verifique se o retorno é o esperado
+test('Retorna false para o valor Olá', () => {
+    expect(myFizzBuzz('Olá')).toBe(false);
+});
+});
